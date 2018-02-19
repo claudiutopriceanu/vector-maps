@@ -4,11 +4,8 @@ import { CountryMap } from '../components/Maps'
 
 const CountryMapPage = props => {
   return (
-    <div>
-      <CountryMap country={props.match.params.countryCode.toLowerCase()} />
-    </div>
+    <CountryMap country={props.match.params.countryCode.toLowerCase()} />
   )
 }
-
 
 export default CountryMapPage

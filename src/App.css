@@ -8,18 +8,32 @@
 }
 
 .navbar .country-selector-wrapper {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
 }
 
-svg {
-    display: block;
-    background: #33ACFF;
+.svg-wrapper {
+    padding-top: 30px;
+    max-width: 800px;
     margin: auto;
+    max-height: 600px;
+}
+
+.svg-container {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.svg-content {
+    background: #CFEAF3;
 }
 
 path.geo-path {
-    stroke-width: 0.5;
+    stroke-width: 0.3;
     stroke: #fff;
-    fill: #3cff33;
+    fill: #878787;
 }

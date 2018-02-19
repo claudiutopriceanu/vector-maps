@@ -64,7 +64,7 @@ class CountryMap extends React.Component {
     } else {
       return (
         <div className="map-wrapper">
-          <svg width={width} height={height}>
+          <svg className="svg-content" preserveAspectRatio="xMinYMin meet" viewBox={`0 0 ${width} ${height}`}>
             { this.buildPath() }
           </svg>
         </div>

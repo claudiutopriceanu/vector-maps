@@ -18,9 +18,13 @@ class App extends Component {
               <CountrySelect />
             </div>
           </div>
-
-          <Route path={`${process.env.PUBLIC_URL}/`} exact component={WorldMapPage} />
-          <Route path={`${process.env.PUBLIC_URL}/:countryCode`} component={CountryMapPage} />
+          
+          <div className="svg-wrapper"> 
+            <div className="svg-container">
+              <Route path={`${process.env.PUBLIC_URL}/`} exact component={WorldMapPage} />
+              <Route path={`${process.env.PUBLIC_URL}/:countryCode`} component={CountryMapPage} />
+            </div>
+          </div>
         </div>
       </BrowserRouter>
     );

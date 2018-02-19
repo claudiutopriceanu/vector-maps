@@ -34,11 +34,13 @@ class WorldMap extends React.Component {
   render() {
     const { width, height } = this.props
     return (
-      <div className="map-wrapper">
-        <svg width={width} height={height}>
+    <div className="svg-wrapper">
+      <div className="svg-container">
+        <svg className="svg-content" preserveAspectRatio="xMinYMin meet" viewBox={`0 0 ${width} ${height}`}>
           { this.buildPaths() }
         </svg>
       </div>
+    </div>
     )
   }
 }
